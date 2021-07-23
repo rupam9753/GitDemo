@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="48033" started-at="2021-07-15T23:10:51 IST" finished-at="2021-07-15T23:11:39 IST">
+    <groups>
+    </groups>
+    <test name="Validating user login" duration-ms="29153" started-at="2021-07-15T23:10:51 IST" finished-at="2021-07-15T23:11:20 IST">
+      <class name="Academy.E2EProject.HomePage">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:Academy.E2EProject.HomePage@2c35e847]" name="initialization" is-config="true" duration-ms="8484" started-at="2021-07-15T23:10:51 IST" finished-at="2021-07-15T23:11:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2EProject.HomePage@2c35e847]" name="basePageNavigation" duration-ms="14031" started-at="2021-07-15T23:11:00 IST" data-provider="gatData" finished-at="2021-07-15T23:11:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonRestricteduser@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.E2EProject.HomePage@2c35e847]" name="basePageNavigation" duration-ms="5492" started-at="2021-07-15T23:11:14 IST" data-provider="gatData" finished-at="2021-07-15T23:11:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricted user@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.E2EProject.HomePage@2c35e847]" name="teardown" is-config="true" duration-ms="1064" started-at="2021-07-15T23:11:19 IST" finished-at="2021-07-15T23:11:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.E2EProject.HomePage -->
+    </test> <!-- Validating user login -->
+    <test name="Validating Navigation" duration-ms="8258" started-at="2021-07-15T23:11:21 IST" finished-at="2021-07-15T23:11:29 IST">
+      <class name="Academy.E2EProject.ValidateNavBar">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:Academy.E2EProject.ValidateNavBar@437da279]" name="initialization" is-config="true" duration-ms="7749" started-at="2021-07-15T23:11:21 IST" finished-at="2021-07-15T23:11:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="ValidateNavBar()[pri:0, instance:Academy.E2EProject.ValidateNavBar@437da279]" name="ValidateNavBar" duration-ms="240" started-at="2021-07-15T23:11:29 IST" finished-at="2021-07-15T23:11:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNavBar -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.E2EProject.ValidateNavBar@437da279]" name="teardown" is-config="true" duration-ms="268" started-at="2021-07-15T23:11:29 IST" finished-at="2021-07-15T23:11:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.E2EProject.ValidateNavBar -->
+    </test> <!-- Validating Navigation -->
+    <test name="App Testing" duration-ms="0" started-at="2021-07-15T23:11:29 IST" finished-at="2021-07-15T23:11:29 IST">
+    </test> <!-- App Testing -->
+    <test name="Validating Title" duration-ms="9669" started-at="2021-07-15T23:11:29 IST" finished-at="2021-07-15T23:11:39 IST">
+      <class name="Academy.E2EProject.ValidateTitle">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:Academy.E2EProject.ValidateTitle@135606db]" name="initialization" is-config="true" duration-ms="8264" started-at="2021-07-15T23:11:29 IST" finished-at="2021-07-15T23:11:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="FAIL" signature="ValidateHeader()[pri:0, instance:Academy.E2EProject.ValidateTitle@135606db]" name="ValidateHeader" duration-ms="0" started-at="2021-07-15T23:11:38 IST" finished-at="2021-07-15T23:11:38 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.LandingPage.bannerText(LandingPage.java:37)
+at Academy.E2EProject.ValidateTitle.ValidateHeader(ValidateTitle.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHeader -->
+        <test-method status="FAIL" signature="ValidateTitle()[pri:0, instance:Academy.E2EProject.ValidateTitle@135606db]" name="ValidateTitle" duration-ms="1" started-at="2021-07-15T23:11:38 IST" finished-at="2021-07-15T23:11:38 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pageObjects.LandingPage.getTitle(LandingPage.java:29)
+at Academy.E2EProject.ValidateTitle.ValidateTitle(ValidateTitle.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.E2EProject.ValidateTitle@135606db]" name="teardown" is-config="true" duration-ms="284" started-at="2021-07-15T23:11:39 IST" finished-at="2021-07-15T23:11:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.E2EProject.ValidateTitle -->
+    </test> <!-- Validating Title -->
+  </suite> <!-- Suite -->
+</testng-results>
