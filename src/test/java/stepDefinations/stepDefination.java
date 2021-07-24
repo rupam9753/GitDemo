@@ -18,6 +18,7 @@ public class stepDefination extends base{
 public void initialize_the_browser_with_chrome() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	driver=initializeDriver();
+	System.out.println("To test GIT feature");
 }
 
 @And("^Navigate to \"([^\"]*)\" Site$")
